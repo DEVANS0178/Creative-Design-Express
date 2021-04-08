@@ -17,7 +17,7 @@ body{
 /* Styles for ABOUT hero or feature */
 
 .about-hero{
-  background-image: url();
+  background-image: url(img2/john-jennings-fg7J6NnebBc-unsplash.jpg);
   /* ADD IMAGE NAME ABOVE */
   height: 800px;
   background-size: cover;
