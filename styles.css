@@ -1,17 +1,26 @@
+h1{
+ text-align: center;
+}
+
+
+
+
 body{
   padding: 0;
   margin: 0;
-  background: black;
+  background: brown;
   font-family: helvetica, sans-serif;
 }
+
+
 
 .logo{
     display: block;
     margin: auto;
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
-    max-width: 350px;
+    width: 700px;
+
 }
 
 /* Styles for ABOUT hero or feature */
@@ -27,6 +36,8 @@ body{
   /* moving stuff below */
   position: relative;
 }
+
+
 
 .hero h2{
   position: absolute;
@@ -156,5 +167,5 @@ footer a{
 
       img{
           display: none;
-          width: 30%;
+          width: 30%%;
       }
