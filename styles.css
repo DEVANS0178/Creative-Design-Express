@@ -51,10 +51,8 @@ body{
   right: 5%;
 }
 
-button{
-      position: absolute;
-      bottom: 10%;
-      right: 5%;
+form button{
+
       background: none;
       padding: 5px;
       border: 2px black solid;
@@ -63,7 +61,14 @@ button{
       border-radius: 5px;
 }
 
-
+.join button{
+  background: none;
+  padding: 5px;
+  border: 2px black solid;
+  color: black;
+  font-size: 1.3em;
+  border-radius: 5px;
+}
 
 nav{
     background: rgb (255, 255, 255, 0.3);
@@ -91,13 +96,22 @@ main{
     display: flex;
     flex: wrap;
     text-align: center;
+    flex-direction: column;
+    background-image: url("img2/john-jennings-fg7J6NnebBc-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
+.join{
+  background-image: url("img2/ricardo-gomez-angel-5YM26lUicfU-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+}
 .flexItem{
     flex-basis: 300px;
     flex-grow: 1;
     margin: 2px 20px 2px 20px;
-    background: rgba(181, 181, 181, 0.5);
+    background: rgba(181, 181, 181, 0.7);
     padding: 30px;
 }
 
@@ -108,14 +122,12 @@ img{
     border: 0;
 }
 
-.flexItem{
-    margin: 20px;
-}
+
 .flexItem: first-child{
     margin-right: 0;
 }
 footer{
-    background: rgba(0, 0, 0, 0.8)
+    background: rgba(0, 0, 0, 0.8);
     padding: 40px;
 }
 
@@ -129,7 +141,69 @@ footer a{
 
 /* ABOUT STYLES START */
 
+/* START MOBILE FORM STYLES */
+    .form-container{
+/*       TO CENTER add AUTO for margin right and left*/
+      margin: 20px auto;
+/*  WIDTH 100%  FOR MOBILE DEVICES*/
+      width:90%;
+      display:block;
+      font-size:1em;
+    }
+    form p{
+      margin-bottom:5px;
 
+    }
+    label{
+      display:block;
+    }
+    #newsletter input{
+      display:inline;
+      width:auto;
+    }
+    input{
+      /* FOR MOBILE use WIDTH:100% */
+      width:100%;
+      padding:1.7%;
+      margin:1.5% 0;
+      font-size: 1em;
+      border-radius: 4px;
+      border:1px solid #ccc;
+      box-sizing: border-box;
+    }
+    textarea{
+      min-height:100px;
+       /* FOR MOBILE use WIDTH:100% */
+      width: 100%;
+      padding: 2%;
+      margin: 1.5% 0;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    button{
+      /* CHANGED COLORS bellow */
+      background: #45A99F;
+      border: 1px solid #45A99F;
+      /* Rounded corners */
+      border-radius: 4px;
+      /* Text color */
+      color:white;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding:10px 20px;
+      font-size: 1.1em;
+    }
+
+    /* MAP STYLES */
+    .map{
+      width: 90%;
+      margin-right: auto;
+      margin-left: auto;
+      display: block;
+    }
+  /*        END MOBILE FORM STYLES */
 
 
 
@@ -139,33 +213,42 @@ footer a{
 /* END ABOUT STYLES */
 @media screen and (min-width: 700px) {
         .flexItem{
+
           height: 400px;
+          margin: 2px 20px 2px 20px;
+        }
+        main{
+          flex-direction: row;
+          background-image: url("img2/john-jennings-fg7J6NnebBc-unsplash.jpg");
+          background-size: cover;
+          background-position: center;
         }
         .vertical{
           width: 30%;
         }
         img{
-            width:30%;
+
             display: inline;
         }
         .vertical{
           width: 20%;
         }
 
-        .flexItem{
-            margin: 20px;
+        .artwork{
+          flex-basis: 300px;
+          flex-grow: 1;
+          margin: 2px 20px 2px 20px;
         }
 
-}
-
-@media screen and (min-width: 700px) {
         .logo{
           /* width: 350px; */
         }
         img{
-            width:30%;
+
             display: inline;
         }
+
+
 
 
 
@@ -174,62 +257,6 @@ footer a{
 @media screen and (min-width: 1300px) {
 
       img{
-          display: none;
-          width: 30%%;
+
       }
-
-      /* START MOBILE FORM STYLES */
-          .form-container{
-      /*       TO CENTER add AUTO for margin right and left*/
-            margin: 20px auto;
-      /*  WIDTH 100%  FOR MOBILE DEVICES*/
-            width:90%;
-            display:block;
-            font-size:1em;
-          }
-          form p{
-            margin-bottom:5px;
-
-          }
-          label{
-            display:block;
-          }
-          #newsletter input{
-            display:inline;
-            width:auto;
-          }
-          input{
-            /* FOR MOBILE use WIDTH:100% */
-            width:100%;
-            padding:1.7%;
-            margin:1.5% 0;
-            font-size: 1em;
-            border-radius: 4px;
-            border:1px solid #ccc;
-            box-sizing: border-box;
-          }
-          textarea{
-            min-height:100px;
-             /* FOR MOBILE use WIDTH:100% */
-            width: 100%;
-            padding: 2%;
-            margin: 1.5% 0;
-            font-size: 1em;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-          }
-          button{
-            /* CHANGED COLORS bellow */
-            background: #45A99F;
-            border: 1px solid #45A99F;
-            /* Rounded corners */
-            border-radius: 4px;
-            /* Text color */
-            color:white;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            padding:10px 20px;
-            font-size: 1.1em;
-          }
-        /*        END MOBILE FORM STYLES */
+}
